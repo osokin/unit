@@ -1,23 +1,6 @@
-TODO: Adjust the following lines from README
+NGINX Unit is a lightweight dynamic open-source server for diverse
+web applications; to install it, see here.
 
-
-NGINX Unit
-----------
-
-The documentation and binary packages are available online:
-
-  http://unit.nginx.org
-
-The source code is provided under the terms of Apache License 2.0:
-
-  http://hg.nginx.org/unit
-
-Please ask questions, report issues, and send patches to the mailing list:
-
-  unit@nginx.org (http://mailman.nginx.org/mailman/listinfo/unit)
-
-or via Github:
-
-  https://github.com/nginx/unit
-
-...
+Built from scratch, Unit can run web apps in different language
+versions; fully configurable in runtime with zero interruption, it
+enables on-the-fly granular management for engineering and operations.
