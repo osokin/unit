@@ -4,7 +4,7 @@
      res = sendfile(s, fd, &pos, size);
  #endif
  
-+#ifdef NXT_HAVE_NETBSD_SENDFILE
++#ifdef NXT_HAVE_NETBSD_MMAP_WRITE
 +    struct stat fileinfo;
 +    void *fmem = NULL;
 +    res = fstat(fd, &fileinfo);

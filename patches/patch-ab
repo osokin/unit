@@ -4,7 +4,7 @@
  
  NXT_HAVE_LINUX_SENDFILE=NO
  NXT_HAVE_FREEBSD_SENDFILE=NO
-+NXT_HAVE_NETBSD_SENDFILE=NO
++NXT_HAVE_NETBSD_MMAP_WRITE=NO
  NXT_HAVE_MACOSX_SENDFILE=NO
  NXT_HAVE_SOLARIS_SENDFILEV=NO
  NXT_HAVE_AIX_SEND_FILE=NO
@@ -17,7 +17,7 @@
 +    # NetBSD has no sendfile().
 +
 +    nxt_feature="NetBSD mmap()/write()"
-+    nxt_feature_name=NXT_HAVE_NETBSD_SENDFILE
++    nxt_feature_name=NXT_HAVE_NETBSD_MMAP_WRITE
 +    nxt_feature_libs=
 +    nxt_feature_test="#include <sys/types.h>
 +                      #include <sys/mman.h>
@@ -37,7 +37,7 @@
 +    . auto/feature
 +
 +    if [ $nxt_found = yes ]; then
-+        NXT_HAVE_NETBSD_SENDFILE=YES
++        NXT_HAVE_NETBSD_MMAP_WRITE=YES
 +    fi
 +fi
  
