@@ -1,0 +1,4 @@
+# Run NGINX Unit on NetBSD
+
+Problem report has been raise in NetBSD's GNATS
+https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=55553
