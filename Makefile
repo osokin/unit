@@ -54,4 +54,14 @@ OWN_DIRS_PERMS+=	${UNIT_DATADIR} ${UNIT_USER} ${UNIT_GROUP} 0700
 
 USE_LANGUAGES=	c
 
+post-build:
+.if !empty(PKG_OPTIONS:Mdevkit)
+	@cd ${WRKSRC} && ${MAKE} build/libunit.a
+.endif
+
+post-install:
+.if !empty(PKG_OPTIONS:Mdevkit)
+	${MAKE} -C ${WRKSRC} libunit-install DESTDIR=${DESTDIR}
+.endif
+
 .include "../../mk/bsd.pkg.mk"

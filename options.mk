@@ -1,7 +1,7 @@
 # $NetBSD$
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.unit
-PKG_SUPPORTED_OPTIONS=	debug ssl
+PKG_SUPPORTED_OPTIONS=	debug devkit ssl
 PKG_SUGGESTED_OPTIONS=	ssl
 
 PLIST_VARS+=		devkit
@@ -10,6 +10,10 @@ PLIST_VARS+=		devkit
 
 .if !empty(PKG_OPTIONS:Mdebug)
 CONFIGURE_ARGS+=	--debug
+.endif
+
+.if !empty(PKG_OPTIONS:Mdevkit)
+PLIST.devkit=		yes
 .endif
 
 .if !empty(PKG_OPTIONS:Mssl)
