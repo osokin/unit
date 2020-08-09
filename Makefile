@@ -43,11 +43,15 @@ CONFIGURE_ARGS+=	--tmp=${UNIT_TMPDIR}
 CONFIGURE_ARGS+=	--user=${UNIT_USER}
 CONFIGURE_ARGS+=	--group=${UNIT_GROUP}
 
+.include "../../www/unit/options.mk"
+
+RCD_SCRIPTS=		unit
+
 INSTALLATION_DIRS+=	sbin
 MAKE_DIRS+=		${UNIT_PIDDIR} ${UNIT_DATADIR} ${UNIT_RUNDIR}
 OWN_DIRS=		${UNIT_LOGDIR} ${UNIT_RUNDIR}
 OWN_DIRS_PERMS+=	${UNIT_DATADIR} ${UNIT_USER} ${UNIT_GROUP} 0700
 
-USE_LANGUAGES=	c c++
+USE_LANGUAGES=	c
 
 .include "../../mk/bsd.pkg.mk"
