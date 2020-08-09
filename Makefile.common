@@ -1,5 +1,7 @@
 # $NetBSD$
+#
 # used by www/unit/Makefile
+# used by www/unit-php/Makefile
 
 # Do *not* add any version-specific data here
 
