@@ -36,7 +36,7 @@ PKG_SHELL.${UNIT_USER}=	${NOLOGIN}
 USE_PKGLOCALEDIR=	yes
 HAS_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
-CONFIGURE_ARGS+=	--ld-opt="-L${PREFIX}/lib"
+CONFIGURE_ARGS+=	--ld-opt=-L${PREFIX}/lib
 CONFIGURE_ARGS+=	--log=${UNIT_LOGDIR}/unit.log
 CONFIGURE_ARGS+=	--modules=libexec/unit/modules
 CONFIGURE_ARGS+=	--pid=${UNIT_PIDDIR}/unit.pid
