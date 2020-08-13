@@ -6,4 +6,4 @@ SHA512 (unit-1.18.0.tar.gz) = 2beac69caeb09278a6c2cdafe20a8040e589f9ad6e302c896c
 Size (unit-1.18.0.tar.gz) = 742273 bytes
 SHA1 (patch-auto_sendfile) = 9a5d0caaf9ffb787d5961eaa891bbe680300a8d6
 SHA1 (patch-src_nxt__application.c) = c488775742bcd55f6d0cbc2d2f0263bc7c7519b7
-SHA1 (patch-src_nxt__conn__write.c) = f3282c594d3317769e7ccdcb89794665b44be4c1
+SHA1 (patch-src_nxt__conn__write.c) = c5a70c2e18ed399bece5efcebe38f0369c7c911d
