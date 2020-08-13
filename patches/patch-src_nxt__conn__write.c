@@ -8,7 +8,7 @@
 +    int   err;
 +    void *map;
 +
-+    map = mmap((void *)0, size, PROT_READ, MAP_FILE | MAP_SHARED, fd, pos);
++    map = mmap(NULL, size, PROT_READ, MAP_FILE | MAP_SHARED, fd, pos);
 +    if (nxt_slow_path(map == MAP_FAILED)) {
 +        return -1;
 +    }
